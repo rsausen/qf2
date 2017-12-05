@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Química Farmacêutica II</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="page home-page">
+      <!-- Main Navbar-->
+      <header class="header">
+        <nav class="navbar">
+
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <!-- Navbar Header-->
+              <div class="navbar-header">
+                <!-- Navbar Brand --><a href="index.html" class="navbar-brand">
+                  <div class="brand-text brand-big"><span>Química Farmacêutica II</strong></div>
+                  <div class="brand-text brand-small"><strong>QFII</strong></div></a>
+                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+              </div>
+              <!-- Navbar Menu -->
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+
+                <!-- Logout    -->
+                <li class="nav-item"><a href="index.html" class="nav-link logout">Sair<i class="fa fa-sign-out"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="page-content d-flex align-items-stretch">
+        <!-- Side Navbar -->
+        <nav class="side-navbar">
+           <!-- Sidebar Navidation Menus-->
+          <span style="padding-top: 20px" class="heading">Navegação</span>
+          <ul class="list-unstyled">
+            <li > <a href="home.html"><i class="icon-home"></i>Início</a></li>
+            <li><a href="#item1" aria-expanded="false" data-toggle="collapse"> <img src="img/si-glyph-head.svg" style="height: 20px; width: auto;"/> Alzheimer </a>
+              <ul id="item1" class="collapse list-unstyled">
+                <li class="active"><a href="alzheimer-desc.html">Caracterização</a></li>
+                <li><a href="alzheimer-reagrama.html">Reagrama</a></li>
+              </ul>
+            </li>
+            <li><a href="#item2" aria-expanded="false" data-toggle="collapse"> <img src="img/si-glyph-head.svg" style="height: 20px; width: auto;"/> Epilepsia </a>
+              <ul id="item2" class="collapse list-unstyled">
+                <li><a href="epilepsia-desc.html">Caracterização</a></li>
+                <li><a href="epilepsia-reagrama.html">Reagrama</a></li>
+              </ul>
+            </li>
+            <li><a href="#item3" aria-expanded="false" data-toggle="collapse"> <img src="img/si-glyph-head.svg" style="height: 20px; width: auto;"/> Esquizofrenia </a>
+              <ul id="item3" class="collapse list-unstyled">
+                <li><a href="esquizofrenia-desc.html">Caracterização</a></li>
+                <li class="active"><a href="esquizofrenia-reagrama.html">Reagrama</a></li>
+              </ul>
+            </li>
+        </nav>
+        <div class="content-inner">
+          <!-- Page Header-->
+          <header class="page-header">
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom text-center">Esquizofrenia - Reagrama</h2>
+            </div>
+          </header>
+          <!-- Dashboard Counts Section-->
+          <section class="dashboard-counts" style="min-height: calc(100vh - 150px)">
+            <div class="container-fluid">
+              <div class="row bg-white has-shadow">
+                <!-- Item -->
+                <div class="col-sm-6 text-center">
+                    <img src="img/moleculas/dopamina.png" style="height: 200px; width: auto; margin-bottom: 10px;" class="img-fluid" alt="">
+                    <p style="margin-bottom: 50px;"><strong>Dopamina</strong></p>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <img src="img/moleculas/serotonina.png" style="height: 200px; width: auto; margin-bottom: 10px;"  class="img-fluid" alt="">
+                    <p style="margin-bottom: 50px;"><strong>Serotonina</strong></p>
+                </div>
+                <div class="col-sm-6 text-center">
+                  <img src="img/moleculas/clorpromazina2.png" style="height: 200px; width: auto; margin-bottom: 10px;" class="img-fluid" alt="" usemap="#clorpromazina-map">
+                  <map name="clorpromazina-map">
+                      <area target="" alt="ClorpromazinaAzul" title="ClorpromazinaAzul" href="#!" coords="20,349,110,442" shape="rect" onclick="ClorpromazinaAzul();">
+                      <area target="" alt="ClorpromazinaVermelho" title="ClorpromazinaVermelho" href="#!" coords="201,450,199,610,335,686,456,620,533,665,542,708,609,708,692,619,813,684,944,609,945,449,815,367,695,428,607,357,537,358,457,430,340,364" shape="poly" onclick="ClorpromazinaVermelho();">
+                      <area target="" alt="ClorpromazinaVerde" title="ClorpromazinaVerde" href="#!" coords="1182,314,1180,217,979,184,976,109,1068,113,1068,10,887,7,879,174,806,217,694,153,547,240,546,353,605,353,603,271,692,210,811,275,928,236,1025,299" shape="poly" onclick="ClorpromazinaVerde();">
+                  </map>
+                  <p><strong>Clorpromazina (Fenotiazídicos)</strong></p>
+                </div>
+                <div class="col-sm-6 text-center">
+                  <img src="img/moleculas/clorprotixeno2.png" style="height: 200px; width: auto; margin-bottom: 10px;" class="img-fluid" alt="" usemap="#clorprotixeno-map">
+                  <map name="clorprotixeno-map">
+                          <area target="" alt="ClorprotixenoVerde" title="ClorprotixenoVerde" href="#!" coords="858,783,755,842,733,908,726,996,669,996,662,888,635,829,542,772,537,617,410,549,403,383,485,383,488,523,589,595,593,745,686,781,819,730" shape="poly" onclick="ClorprotixenoVerde();">
+                          <area target="" alt="ClorprotixenoVermelho" title="ClorprotixenoVermelho" href="#!" coords="397,28,391,79,304,128,174,52,17,141,19,317,172,404,305,325,386,381,495,381,563,321,698,398,844,314,848,135,695,48,565,124,464,26" shape="poly" onclick="ClorprotixenoVermelho();">
+                          <area target="" alt="ClorprotixenoAzul" title="ClorprotixenoAzul" href="#!" coords="910,319,1017,434" shape="rect" onclick="ClorprotixenoAzul();">
+                      </map>
+                  </map>
+                  <p><strong>Clorprotixeno (Tioxantenos)</strong></p>
+                </div>
+              </div>
+              <div class="row bg-white has-shadow">
+                  <div class="col-sm-6 text-center">
+                      <p style="color: #fc1e0c"><strong>SINTOMAS NEGATIVOS: ATÍPICOS</strong></p>
+                      <img src="img/moleculas/clozapina.png" style="height: 200px; width: auto; margin-bottom: 10px;" class="img-fluid" alt="" usemap="#clozapina-map">
+                      <map name="clozapina-map">
+                              <area target="" alt="ClozapinaAzul" title="ClozapinaAzul" href="#!" coords="8,675,98,764" shape="rect" onclick="ClozapinaAzul();">
+                              <area target="" alt="ClozapinaVermelho" title="ClozapinaVermelho" href="#!" coords="224,772,268,936,428,977,530,872,632,918,637,1037,704,1037,709,914,799,871,911,976,1070,927,1109,761,989,641,839,684,746,576,625,542,560,545,485,685,345,647" shape="poly" onclick="ClozapinaVermelho();">
+                              <area target="" alt="ClozapinaLaranja" title="ClozapinaLaranja" href="#!" coords="811,173,723,314,794,493,990,487,1066,325,1010,150,915,146" shape="poly" onclick="ClozapinaLaranja();">
+                              <area target="" alt="ClozapinaVerde" title="ClozapinaVerde" href="#!" coords="1017,5,1193,120" shape="rect" onclick="ClozapinaVerde();">
+                          </map>
+                      <p><strong>Clozapina</strong></p>
+                    </div>
+                    <div class="col-sm-6 text-center">
+                        <p style="color: #46f257"><strong>SINTOMAS POSITIVOS: INCISIVOS</strong></p>
+                        <img src="img/moleculas/haloperidol2.png" style="height: 200px; width: auto" class="img-fluid" alt="" usemap="#haloperidol-map">
+                        <map name="haloperidol-map">
+                          <area target="" alt="HaloperidolAzul" title="HaloperidolAzul" href="#!" coords="1103,14,1190,93" shape="rect" onclick="HaloperidolAzul();">
+                          <area target="" alt="HaloperidolVerde" title="HaloperidolVerde" href="#!" coords="1099,134,1153,232,1097,332,1000,335,961,398,1010,398,1031,376,1123,379,1123,446,1023,448,1006,426,950,425,949,524,850,582,788,551,731,553,729,480,749,475,748,405,849,347,934,393,975,320,928,232,987,131" shape="poly" onclick="HaloperidolVerde();">
+                          <area target="" alt="HaloperidolVermelho" title="HaloperidolVermelho" href="#!" coords="320,580,402,529,491,580,581,528,671,580,730,544,725,522,670,551,582,504,493,552,425,512,431,379,369,381,376,511,307,549" shape="poly" onclick="HaloperidolVermelho();">
+                          <area target="" alt="HaloperidolVerde2" title="HaloperidolVerde2" href="#!" coords="222,499,122,560,124,675,222,734,322,677,313,564" shape="poly" onclick="HaloperidolVerde();">
+                          <area target="" alt="HaloperidolAzul2" title="HaloperidolAzul2" href="#!" coords="14,683,67,756" shape="rect" onclick="HaloperidolAzul();">
+                        </map>
+                        <p><strong>Haloperidol</strong></p>
+                      </div>
+              </div>
+            </div>
+          </section>
+          <footer class="main-footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12">
+                  <p align="center">Acadêmicos: Pablo Sausen, Liege Sausen, Lisandra Siebel e Vivan Teixeira</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAIS -->
+    <div class="modal fade" id="ClorpromazinaVerde" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i> do tempo de &frac12; vida e Lipofilia.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="ClorpromazinaVermelho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                Grupamento Farmacóforo.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="ClorpromazinaAzul" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-center">
+                    Elementos eletronegativos, anel aromático. <br> <i class="fa fa-arrow-up" aria-hidden="true"></i> de Lipofila e tempo de &frac12; vida.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="ClorpromazinaVerde" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-center">
+                      <i class="fa fa-arrow-up" aria-hidden="true"></i> do tempo de &frac12; vida e Lipofilia.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="modal fade" id="ClorpromazinaVermelho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body text-center">
+                      Grupamento Farmacóforo.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="modal fade" id="ClorprotixenoAzul" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-center">
+                          Elementos eletronegativos, anel aromático. <br><i class="fa fa-arrow-up" aria-hidden="true"></i> de Lipofila e tempo de &frac12; vida.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                    <div class="modal fade" id="ClorprotixenoVerde" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <i class="fa fa-arrow-up" aria-hidden="true"></i> do tempo de &frac12; vida e Lipofilia.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  
+                          <div class="modal fade" id="ClorprotixenoVermelho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body text-center">
+                                      Grupamento Farmacóforo.
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal fade" id="ClozapinaVermelho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        Grupamento Farmacóforo.
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="modal fade" id="ClozapinaAzul" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body text-center">
+                                          Elementos eletronegativos, anel aromático. <br><i class="fa fa-arrow-up" aria-hidden="true"></i> de Lipofila e tempo de &frac12; vida.
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="modal fade" id="ClozapinaVerde" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body text-center">
+                                            <i class="fa fa-arrow-up" aria-hidden="true"></i> do tempo de &frac12; vida e Lipofilia.
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="modal fade" id="ClozapinaLaranja" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body text-center">
+                                              <i class="fa fa-arrow-up" aria-hidden="true"></i> Peso.
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="modal fade" id="HaloperidolVerde" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body text-center">
+                                              Grupamento volumosos, aumento de lipofilia e tempo de meia vida.
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="modal fade" id="HaloperidolVermelho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body text-center">
+                                              Grupamento farmacofórico, liga-se ao receptor dopaminérgico, bloqueador D2, diminuindo ação da dopamina.
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="modal fade" id="HaloperidolAzul" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body text-center">
+                                              Elementos eletronegativos, anel aromático – aumento de lipofila e tempo de meia vida.
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+    <!-- Javascript files-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="js/charts-home.js"></script>
+    <script src="js/front.js"></script>
+    <script src="js/imageMapResizer.min.js"></script>
+    
+    <script>
+    $(document).ready(function() {
+      $('map').imageMapResize();
+    });
+    </script>
+
+    <script>
+      function ClorpromazinaVerde(){
+      $("#ClorpromazinaVerde").modal('show'); 
+      }
+
+      function ClorpromazinaVermelho(){
+      $("#ClorpromazinaVermelho").modal('show'); 
+      }
+
+      function ClorpromazinaAzul(){
+      $("#ClorpromazinaAzul").modal('show'); 
+      }
+      
+      function ClorprotixenoVerde(){
+      $("#ClorprotixenoVerde").modal('show'); 
+      }
+
+      function ClorprotixenoVermelho(){
+      $("#ClorprotixenoVermelho").modal('show'); 
+      }
+
+      function ClorprotixenoAzul(){
+      $("#ClorprotixenoAzul").modal('show'); 
+      }
+
+      function ClozapinaVerde(){
+      $("#ClozapinaVerde").modal('show'); 
+      }
+
+      function ClozapinaVermelho(){
+      $("#ClozapinaVermelho").modal('show'); 
+      }
+
+      function ClozapinaAzul(){
+      $("#ClozapinaAzul").modal('show'); 
+      }
+
+      function ClozapinaLaranja(){
+      $("#ClozapinaLaranja").modal('show'); 
+      }
+
+      function HaloperidolVerde(){
+      $("#HaloperidolVerde").modal('show'); 
+      }
+
+      function HaloperidolVermelho(){
+      $("#HaloperidolVermelho").modal('show'); 
+      }
+
+      function HaloperidolAzul(){
+      $("#HaloperidolAzul").modal('show'); 
+      }
+    </script>
+
+  </body>
+</html>

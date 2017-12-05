@@ -1,0 +1,63 @@
+                  <img src="img/moleculas/rivastigmina2.png" style="height: 200px; width: auto" class="img-fluid" alt="" usemap="#image-map">
+                  <map name="image-map">
+                      <area target="" alt="RivastigminaVermelha" title="RivastigminaVermelha" href="pablomaisfeio" coords="134,97,243,8,343,80,360,163,139,161" shape="poly">
+                      <area target="" alt="RivastigminaVerde1" title="RivastigminaVerde1" href="pablofeio" coords="107,100,24,163" shape="rect">
+                      <area target="" alt="RivastigminaVerde2" title="RivastigminaVerde2" href="" coords="171,169,266,222" shape="rect">
+                      <area target="" alt="RivastigminaVerde3" title="RivastigminaVerde3" href="" coords="479,167,577,221" shape="rect">
+                      <area target="" alt="RivastigminaVerde4" title="RivastigminaVerde4" href="" coords="590,97,680,168" shape="rect">
+                      <area target="" alt="RivastigminaVerde5" title="RivastigminaVerde5" href="" coords="533,15,631,71" shape="rect">
+                      <area target="" alt="RivastigminaAzul" title="RivastigminaAzul" href="pablomaisfeioainda" coords="401,3,341,34,347,96,400,141,461,112,463,34" shape="poly">
+                  </map>
+
+                <img src="acidovalproico2.png" usemap="#image-map">
+                <map name="image-map">
+                    <area target="" alt="ValproicoVermelho" title="ValproicoVermelho" href="" coords="1068,470,1065,323,834,296,817,25,660,23,678,284,576,351,426,248,221,344,54,240,3,331,222,443,401,347,553,399,599,399,746,376,920,475" shape="poly">
+                    <area target="" alt="ValproicoVerde" title="ValproicoVerde" href="" coords="606,404,601,617,431,716,427,903,369,904,363,676,533,567,540,402" shape="poly">
+                </map>
+
+            <img src="barbituricos2.png" usemap="#image-map">
+            <map name="image-map">
+                <area target="" alt="BarbituricosVermelho" title="BarbituricosVermelho" href="" coords="127,6,116,75,51,92,35,179,1,227,3,290,109,287,231,227,272,229,276,188,245,91,176,5" shape="poly">
+                <area target="" alt="BarbituricosVerde" title="BarbituricosVerde" href="" coords="139,306,172,365,248,366,279,307,247,248,193,247,167,262" shape="poly">
+            </map>
+
+    <img src="clonazepam2.png" usemap="#image-map">
+    <map name="image-map">
+        <area target="" alt="ClonazepamLaranja" title="ClonazepamLaranja" href="" coords="401,505,313,557,305,649,51,653,46,510,279,500,368,458" shape="poly">
+        <area target="" alt="ClonazepamAzul" title="ClonazepamAzul" href="" coords="1024,758,1163,886" shape="rect">
+        <area target="" alt="ClonazepamVerde" title="ClonazepamVerde" href="" coords="600,784,557,977,702,1114,890,1057,924,864,789,736" shape="poly">
+        <area target="" alt="ClonazepamVermelho" title="ClonazepamVermelho" href="" coords="765,40,759,201,686,261,540,187,361,290,363,440,413,518,542,589,688,506,818,607,1036,609,1087,387,1003,217,889,179,879,43" shape="poly">
+    </map>
+
+    <img src="clorpromazina2.png" usemap="#image-map">
+    <map name="image-map">
+        <area target="" alt="ClorpromazinaAzul" title="ClorpromazinaAzul" href="" coords="20,349,110,442" shape="rect">
+        <area target="" alt="ClorpromazinaVermelho" title="ClorpromazinaVermelho" href="" coords="201,450,199,610,335,686,456,620,533,665,542,708,609,708,692,619,813,684,944,609,945,449,815,367,695,428,607,357,537,358,457,430,340,364" shape="poly">
+        <area target="" alt="ClorpromazinaVerde" title="ClorpromazinaVerde" href="" coords="1182,314,1180,217,979,184,976,109,1068,113,1068,10,887,7,879,174,806,217,694,153,547,240,546,353,605,353,603,271,692,210,811,275,928,236,1025,299" shape="poly">
+    </map>
+
+    <img src="clorprotixeno2.png" usemap="#image-map">
+    <map name="image-map">
+        <area target="" alt="ClorprotixenoVerde" title="ClorprotixenoVerde" href="" coords="858,783,755,842,733,908,726,996,669,996,662,888,635,829,542,772,537,617,410,549,403,383,485,383,488,523,589,595,593,745,686,781,819,730" shape="poly">
+        <area target="" alt="ClorprotixenoVermelho" title="ClorprotixenoVermelho" href="" coords="397,28,391,79,304,128,174,52,17,141,19,317,172,404,305,325,386,381,495,381,563,321,698,398,844,314,848,135,695,48,565,124,464,26" shape="poly">
+        <area target="" alt="ClorprotixenoAzul" title="ClorprotixenoAzul" href="" coords="910,319,1017,434" shape="rect">
+    </map>
+
+    <img src="haloperidol2.png" usemap="#image-map">
+    <map name="image-map">
+        <area target="" alt="HaloperidolAzul" title="HaloperidolAzul" href="" coords="1103,14,1190,93" shape="rect">
+        <area target="" alt="HaloperidolVerde" title="HaloperidolVerde" href="" coords="1099,134,1153,232,1097,332,1000,335,961,398,1010,398,1031,376,1123,379,1123,446,1023,448,1006,426,950,425,949,524,850,582,788,551,731,553,729,480,749,475,748,405,849,347,934,393,975,320,928,232,987,131" shape="poly">
+        <area target="" alt="HaloperidolVermelho" title="HaloperidolVermelho" href="" coords="320,580,402,529,491,580,581,528,671,580,730,544,725,522,670,551,582,504,493,552,425,512,431,379,369,381,376,511,307,549" shape="poly">
+        <area target="" alt="HaloperidolVerde2" title="HaloperidolVerde2" href="" coords="222,499,122,560,124,675,222,734,322,677,313,564" shape="poly">
+        <area target="" alt="HaloperidolAzul2" title="HaloperidolAzul2" href="" coords="14,683,67,756" shape="rect">
+    </map>
+
+    <img src="clozapina.png" usemap="#image-map">
+    <map name="image-map">
+        <area target="" alt="ClozapinaAzul" title="ClozapinaAzul" href="" coords="8,675,98,764" shape="rect">
+        <area target="" alt="ClozapinaVermelho" title="ClozapinaVermelho" href="" coords="224,772,268,936,428,977,530,872,632,918,637,1037,704,1037,709,914,799,871,911,976,1070,927,1109,761,989,641,839,684,746,576,625,542,560,545,485,685,345,647" shape="poly">
+        <area target="" alt="ClozapinaLaranja" title="ClozapinaLaranja" href="" coords="811,173,723,314,794,493,990,487,1066,325,1010,150,915,146" shape="poly">
+        <area target="" alt="ClozapinaVerde" title="ClozapinaVerde" href="" coords="1017,5,1193,120" shape="rect">
+    </map>
+
+            

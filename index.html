@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Química Farmacêutica II</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .container {
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 4.5em;
+    }
+
+    .cabecalho img {
+      height: 140px;
+    }
+
+    @media (max-width: 992px) {
+      h1 {
+        font-size: 3.5em !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 2.5em !important;
+      }
+
+      .logo>img {
+        height: 100px;
+      }
+    }
+
+    #snowfall {
+      height: 100vh;
+      background: rgba(26, 26, 26, 1);
+      background: -moz-linear-gradient(top, rgba(26, 26, 26, 1) 0%, rgba(122, 122, 122, 1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(26, 26, 26, 1)), color-stop(100%, rgba(122, 122, 122, 1)));
+      background: -webkit-linear-gradient(top, rgba(26, 26, 26, 1) 0%, rgba(122, 122, 122, 1) 100%);
+      background: -o-linear-gradient(top, rgba(26, 26, 26, 1) 0%, rgba(122, 122, 122, 1) 100%);
+      background: -ms-linear-gradient(top, rgba(26, 26, 26, 1) 0%, rgba(122, 122, 122, 1) 100%);
+      background: linear-gradient(to bottom, rgba(26, 26, 26, 1) 0%, rgba(122, 122, 122, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1a', endColorstr='#7a7a7a', GradientType=0);
+      color: #fff;
+    }
+
+    .particles-js-canvas-el {
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      opacity: 0.2;
+    }
+
+    .form-control {
+      border: 1px solid white;
+    }
+
+    .login {
+      margin-top: 20%;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body id="snowfall">
+  <div class="container">
+    <div class="row cabecalho align-items-center">
+      <div class="col-md-3 align-middle logo">
+        <img src="img/logo.png">
+      </div>
+      <div class="col-md-6">
+        <h1 class="text-center">
+              Química Farmacêutica II
+        </h1>
+      </div>
+      <div class="d-none d-md-block col-md-3 align-middle text-right">
+        <img src="img/logo.png">
+      </div>
+    </div>
+    <div class="text-center">
+        <p>Professora: Dra. Edna Sueynaga</p>
+    </div>
+    <form action="#" onsubmit="return logar();">
+      <div class="row login justify-content-md-center">
+        <div class="col col-md-8 col-lg-5">
+          <div class="input-group input-group-lg">
+            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+            <input type="password" id="password" class="form-control" placeholder="Entre com a senha">
+          </div>
+          <div id="feedback" class="invalid-feedback" style="display: none;">
+            <i class="fa fa-info-circle"></i> Verifique a senha de acesso.
+          </div>
+          <br>
+          <button class="btn btn-secondary btn-block btn-lg" onclick="logar();">Entrar</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="row justify-content-md-center">
+      <div class="col col-md-8 col-lg-5 text-center">
+        <p>Acadêmicos: Pablo Sausen, Liege Sausen, Lisandra Siebel e Vivan Teixeira</p>
+        <br>
+        <br>
+        <small>Dezembro | 2017</small>
+      </div>
+    </div>
+  </div>
+
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <script>
+    function logar() {
+      if ($('#password').val() == "qf2") {
+        $.cookie("logado", "true");
+        window.location.href = "home.html";
+      } else {
+        $('#feedback').css('display', 'block');
+      }
+    }
+
+    $(document).ready(function() {
+      particlesJS("snowfall", {
+        "particles": {
+          "number": {
+            "value": 300
+          },
+          "shape": {
+            "type": "circle"
+          },
+          "size": {
+            "value": 5,
+            "random": true
+          },
+          "line_linked": {
+            "enable": true
+          },
+          "move": {
+            "enable": true
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true
+            }
+          },
+          "modes": {
+            "push": {
+              "particles_nb": 12
+            }
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
