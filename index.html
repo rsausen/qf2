@@ -102,6 +102,7 @@
           </div>
           <br>
           <button class="btn btn-secondary btn-block btn-lg" onclick="logar();">Entrar</button>
+          <a href="home.html" id="link" style="display: none;">sdd</a>
         </div>
       </div>
     </form>
@@ -123,7 +124,8 @@
     function logar() {
       if ($('#password').val() == "qf2") {
         $.cookie("logado", "true");
-        window.location.href = "home.html";
+        window.location.assign("http://quimicafarmaceutica.com.br/home.html");
+        return false;
       } else {
         $('#feedback').css('display', 'block');
       }
